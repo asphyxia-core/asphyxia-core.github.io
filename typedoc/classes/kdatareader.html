@@ -1,0 +1,795 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KDataReader | Asphyxia CORE Module API</title>
+	<meta name="description" content="Documentation for Asphyxia CORE Module API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Asphyxia CORE Module API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="kdatareader.html">KDataReader</a>
+				</li>
+			</ul>
+			<h1>Class KDataReader</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A warpper of javascript object for reading xml-like formatted data.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">KDataReader</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="kdatareader.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="kdatareader.html#obj" class="tsd-kind-icon">obj</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#attr" class="tsd-kind-icon">attr</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#bigint" class="tsd-kind-icon">bigint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#bigints" class="tsd-kind-icon">bigints</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#bool" class="tsd-kind-icon">bool</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#element" class="tsd-kind-icon">element</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#elements" class="tsd-kind-icon">elements</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#number" class="tsd-kind-icon">number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#numbers" class="tsd-kind-icon">numbers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="kdatareader.html#str" class="tsd-kind-icon">str</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new KData<wbr>Reader<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="kdatareader.html" class="tsd-signature-type">KDataReader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:297</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="kdatareader.html" class="tsd-signature-type">KDataReader</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="obj" class="tsd-anchor"></a>
+					<h3>obj</h3>
+					<div class="tsd-signature tsd-kind-icon">obj<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in asphyxia-core.d.ts:297</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Wrapped javascript object</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attr" class="tsd-anchor"></a>
+					<h3>attr</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attr<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:330</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get attrubutes for a tag</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">tag</span>: K.ATTR({ <span class="hljs-attr">status</span>: <span class="hljs-string">"1"</span> }, {
+    <span class="hljs-attr">inner</span>: [
+      K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>),
+      K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+    ]
+  })
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).attr(<span class="hljs-string">"tag"</span>) <span class="hljs-comment">// { status: "1" }</span>
+$(data).element(<span class="hljs-string">"tag"</span>).attr().status <span class="hljs-comment">// "1"</span>
+$(data).attr(<span class="hljs-string">"tag.inner.0"</span>).__type <span class="hljs-comment">// "s32"</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="bigint" class="tsd-anchor"></a>
+					<h3>bigint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">bigint<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:363</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a bigint value from a tag, convert to bigint if applicable.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: [
+    K.ITEM(<span class="hljs-string">"s64"</span>, <span class="hljs-number">1n</span>),
+    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+  ],
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>).bigint() <span class="hljs-comment">// 1n</span>
+$(data).bigint(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// 2n</span>
+$(data).bigint(<span class="hljs-string">"invalid"</span>, <span class="hljs-number">3n</span>) <span class="hljs-comment">// 3n</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">bigint</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Default return value when target path does
+										not exists or is not valid.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="bigints" class="tsd-anchor"></a>
+					<h3>bigints</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">bigints<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:389</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a bigint array from a tag. Only returns valid arrays
+									when target tag has a type of <a href="../globals.html#kbiginttype">KBigIntType</a> or <a href="../globals.html#kbigintgrouptype">KBigIntGroupType</a></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">"s64"</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"s32"</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [1n, 2n]</span>
+$(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="bool" class="tsd-anchor"></a>
+					<h3>bool</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">bool<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:417</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a boolean value from a tag, return true only if value in the tag is number and <strong>greater than zero</strong></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"bool"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: [
+    K.ITEM(<span class="hljs-string">"bool"</span>, <span class="hljs-literal">false</span>),
+    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+  ]
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).bool(<span class="hljs-string">"inner.0"</span>) <span class="hljs-comment">// false</span>
+$(data).bool(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// true</span>
+$(data).bool(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// false</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="buffer" class="tsd-anchor"></a>
+					<h3>buffer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:443</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a Buffer object from a tag, Only returns valid Buffer
+									when target tag has a type of &quot;bin&quot;</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"bin"</span>&gt;</span>00ff<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"u8"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"3"</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">"bin"</span>, Buffer.from([<span class="hljs-number">0x00</span>, <span class="hljs-number">0xff</span>])),
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"u8"</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).buffer(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// &lt;Buffer 00 ff&gt;</span>
+$(data).buffer(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:471</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get raw content representation regardless of tag type</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">number</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">array</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"u8"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"3"</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">array</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">number</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>),
+  <span class="hljs-attr">array</span>: K.ARRAY(<span class="hljs-string">"u8"</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]),
+  <span class="hljs-attr">string</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).content(<span class="hljs-string">"number"</span>) <span class="hljs-comment">// [1]</span>
+$(data).content(<span class="hljs-string">"array"</span>) <span class="hljs-comment">// [1, 2, 3]</span>
+$(data).content(<span class="hljs-string">"string"</span>) <span class="hljs-comment">// "abc"</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="element" class="tsd-anchor"></a>
+					<h3>element</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">element<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="kdatareader.html" class="tsd-signature-type">KDataReader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:503</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get first element named <strong>path</strong> inside a tag</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: [
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>) },
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>) }
+  ]
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// &lt;KDataReader&gt;</span>
+$(data).element(<span class="hljs-string">"inner"</span>).obj <span class="hljs-comment">// { id: [object] }</span>
+$(data).element(<span class="hljs-string">"inner"</span>).number(<span class="hljs-string">"id"</span>) <span class="hljs-comment">// 1</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="kdatareader.html" class="tsd-signature-type">KDataReader</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="elements" class="tsd-anchor"></a>
+					<h3>elements</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">elements<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="kdatareader.html" class="tsd-signature-type">KDataReader</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:534</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get array of all elements named <strong>path</strong> inside a tag</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: [
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>) },
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>) }
+  ]
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).elements(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [&lt;KDataReader&gt;, &lt;KDataReader&gt;]</span>
+$(data).elements(<span class="hljs-string">"inner"</span>)[<span class="hljs-number">1</span>].number(<span class="hljs-string">"id"</span>) <span class="hljs-comment">// 2</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="kdatareader.html" class="tsd-signature-type">KDataReader</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="number" class="tsd-anchor"></a>
+					<h3>number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">number<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:567</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a number value from a tag, convert to number if applicable.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: [
+    K.ITEM(<span class="hljs-string">"s64"</span>, <span class="hljs-number">1n</span>),
+    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+  ],
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>).number() <span class="hljs-comment">// 1</span>
+$(data).number(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// 2</span>
+$(data).number(<span class="hljs-string">"invalid"</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// 3</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Default return value when target path does
+										not exists or is not valid.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numbers" class="tsd-anchor"></a>
+					<h3>numbers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">numbers<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:593</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a number array from a tag. Only returns valid arrays
+									when target tag has a type of <a href="../globals.html#knumbertype">KNumberType</a> or <a href="../globals.html#knumbergrouptype">KNumberGroupType</a></p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"s64"</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
+  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">"s32"</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span>
+$(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [3, 4]</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="str" class="tsd-anchor"></a>
+					<h3>str</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">str<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, def<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:619</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a string from a tag, Only returns valid string
+									when target tag has a type of &quot;str&quot;</p>
+								</div>
+								<p>Example:</p>
+								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
+								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>),
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>)
+}</code></pre>
+								<p>Evals:</p>
+								<pre><code class="language-javascript">$(data).str(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// "abc"</span>
+$(data).str(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> def: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="kdatareader.html" class="tsd-kind-icon">KData<wbr>Reader</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="kdatareader.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="kdatareader.html#obj" class="tsd-kind-icon">obj</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#attr" class="tsd-kind-icon">attr</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#bigint" class="tsd-kind-icon">bigint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#bigints" class="tsd-kind-icon">bigints</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#bool" class="tsd-kind-icon">bool</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#buffer" class="tsd-kind-icon">buffer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#element" class="tsd-kind-icon">element</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#elements" class="tsd-kind-icon">elements</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#number" class="tsd-kind-icon">number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#numbers" class="tsd-kind-icon">numbers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="kdatareader.html#str" class="tsd-kind-icon">str</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/config_options.html" class="tsd-kind-icon">CONFIG_<wbr>OPTIONS</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/eamuseinfo.html" class="tsd-kind-icon">Eamuse<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/eamusesend.html" class="tsd-kind-icon">Eamuse<wbr>Send</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/eamusesendoption.html" class="tsd-kind-icon">Eamuse<wbr>Send<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#epr" class="tsd-kind-icon">EPR</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#eamusepluginroute" class="tsd-kind-icon">Eamuse<wbr>Plugin<wbr>Route</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#kattrmap" class="tsd-kind-icon">KAttr<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#kbigintgrouptype" class="tsd-kind-icon">KBig<wbr>Int<wbr>Group<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#kbiginttype" class="tsd-kind-icon">KBig<wbr>Int<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#kencoding" class="tsd-kind-icon">KEncoding</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#knumbergrouptype" class="tsd-kind-icon">KNumber<wbr>Group<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#knumbertype" class="tsd-kind-icon">KNumber<wbr>Type</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
