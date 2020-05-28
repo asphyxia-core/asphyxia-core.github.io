@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: Asphyxia
-logo: https://raw.githubusercontent.com/TsFreddie/asphyxia/master/docs/img/core-logo.png
+logo: /img/core-logo.png
 description: |
   <ul class="downloads">
     <li><a href="#">Download <strong>CORE</strong></a></li>
