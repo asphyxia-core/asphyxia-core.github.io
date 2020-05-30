@@ -72,7 +72,7 @@
 					<p>There are two pools of data for each plugin: <strong><em>PluginSpace</em></strong> and <strong>ProfileSpace</strong></p>
 					<p>If <code>refid</code> is a string, query will match a specific profile data in <strong>ProfileSpace</strong>.</p>
 					<p>If <code>refid</code> is null, query will match all profile data in <strong>ProfileSpace</strong>.
-					(doesn&#39;t apply to <a href="db.html#findone">DB.FindOne</a> and <a href="db.html#insert">DB.Insert</a>)</p>
+					(doesn&#39;t apply to <a href="db.html#insert">DB.Insert</a>)</p>
 					<p>If <code>refid</code> is not provided, query will match data in <strong><em>PluginSpace</em></strong>.</p>
 					<hr>
 					<p><strong>NOTE</strong>: since WebUI can delete data in <strong>ProfileSpace</strong>,
@@ -113,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1030">asphyxia-core.d.ts:1030</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1029">asphyxia-core.d.ts:1029</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -136,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1031">asphyxia-core.d.ts:1031</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1030">asphyxia-core.d.ts:1030</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -166,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L987">asphyxia-core.d.ts:987</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L986">asphyxia-core.d.ts:986</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -189,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L988">asphyxia-core.d.ts:988</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L987">asphyxia-core.d.ts:987</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -212,14 +212,14 @@
 					<a name="findone" class="tsd-anchor"></a>
 					<h3>Find<wbr>One</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">Find<wbr>One&lt;T&gt;<span class="tsd-signature-symbol">(</span>refid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Doc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Find<wbr>One&lt;T&gt;<span class="tsd-signature-symbol">(</span>refid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Doc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">Find<wbr>One&lt;T&gt;<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Doc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L984">asphyxia-core.d.ts:984</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L983">asphyxia-core.d.ts:983</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -231,7 +231,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>refid: <span class="tsd-signature-type">string</span></h5>
+									<h5>refid: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 								<li>
 									<h5>query: <span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -242,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L985">asphyxia-core.d.ts:985</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L984">asphyxia-core.d.ts:984</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -272,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L990">asphyxia-core.d.ts:990</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L989">asphyxia-core.d.ts:989</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -295,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L991">asphyxia-core.d.ts:991</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L990">asphyxia-core.d.ts:990</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -325,7 +325,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L993">asphyxia-core.d.ts:993</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L992">asphyxia-core.d.ts:992</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -348,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L994">asphyxia-core.d.ts:994</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L993">asphyxia-core.d.ts:993</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -378,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L996">asphyxia-core.d.ts:996</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L995">asphyxia-core.d.ts:995</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -404,7 +404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1004">asphyxia-core.d.ts:1004</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1003">asphyxia-core.d.ts:1003</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -437,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1012">asphyxia-core.d.ts:1012</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1011">asphyxia-core.d.ts:1011</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -463,7 +463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1021">asphyxia-core.d.ts:1021</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L1020">asphyxia-core.d.ts:1020</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
