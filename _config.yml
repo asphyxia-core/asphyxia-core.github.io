@@ -3,8 +3,8 @@ title: Asphyxia CORE
 logo: /img/core-logo.png
 description: |
   <ul class="downloads">
-    <li><a href="#">Download <strong>CORE</strong></a></li>
-      <li><a href="#">Setup <strong>Guides</strong></a></li>
+    <li><a href="https://github.com/asphyxia-core/asphyxia-core.github.io/releases">Download <strong>CORE</strong></a></li>
+    <li><a href="https://github.com/asphyxia-core/plugins/releases">Download <strong>Plugins</strong></a></li>
     <li><a href="typedoc">Developer <strong>Docs</strong></a></li>
   </ul>
 include:

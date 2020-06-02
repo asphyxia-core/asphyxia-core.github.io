@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>K | Asphyxia CORE Module API</title>
-	<meta name="description" content="Documentation for Asphyxia CORE Module API">
+	<title>K | Asphyxia CORE Plugin API</title>
+	<meta name="description" content="Documentation for Asphyxia CORE Plugin API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Asphyxia CORE Module API</a>
+					<a href="../index.html" class="title">Asphyxia CORE Plugin API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -79,9 +79,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="k.html#array" class="tsd-kind-icon">ARRAY</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="k.html#attr" class="tsd-kind-icon">ATTR</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="k.html#item" class="tsd-kind-icon">ITEM</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="k.html#array" class="tsd-kind-icon">ARRAY</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="k.html#attr" class="tsd-kind-icon">ATTR</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="k.html#item" class="tsd-kind-icon">ITEM</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,19 +89,19 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="array" class="tsd-anchor"></a>
 					<h3>ARRAY</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">ARRAY<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"u8"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"s8"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ARRAY<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ARRAY<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">ARRAY&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ARRAY&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ARRAY&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L734">asphyxia-core.d.ts:734</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L791">asphyxia-core.d.ts:791</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -113,10 +113,16 @@
 									<pre><code>&lt;tag __type=<span class="hljs-string">"s32"</span> __count=<span class="hljs-string">"3"</span> attr=<span class="hljs-string">"2"</span>&gt;<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>&lt;/tag&gt;</code></pre>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"u8"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"s8"</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"u8"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"s8"</span></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p><strong>__type</strong> attribute, which is used during encoding and compression</p>
 									</div>
@@ -134,18 +140,24 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L735">asphyxia-core.d.ts:735</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L796">asphyxia-core.d.ts:796</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -154,18 +166,24 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L736">asphyxia-core.d.ts:736</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L801">asphyxia-core.d.ts:801</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -174,21 +192,21 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KARRAY</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="attr" class="tsd-anchor"></a>
 					<h3>ATTR</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">ATTR<span class="tsd-signature-symbol">(</span>attr<span class="tsd-signature-symbol">: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a>, inner<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">ATTR&lt;M, T&gt;<span class="tsd-signature-symbol">(</span>attr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">M</span>, inner<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KATTR</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L685">asphyxia-core.d.ts:685</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L734">asphyxia-core.d.ts:734</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,43 +223,52 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span></code></pre>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>M<span class="tsd-signature-symbol">: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h4>
+								</li>
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
+									<h5>attr: <span class="tsd-signature-type">M</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Attribute map</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> inner: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> inner: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Inner tag/data</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KATTR</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 					<a name="item" class="tsd-anchor"></a>
 					<h3>ITEM</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"str"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"bin"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"ip4"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"bool"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbergrouptype" class="tsd-signature-type">KNumberGroupType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbigintgrouptype" class="tsd-signature-type">KBigIntGroupType</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"str"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"str"</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"bin"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"bin"</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"ip4"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ip4"</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"bool"</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"bool"</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ITEM&lt;S&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span>, attr<span class="tsd-signature-symbol">?: </span><a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L702">asphyxia-core.d.ts:702</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L751">asphyxia-core.d.ts:751</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,12 +301,12 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"str"</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L703">asphyxia-core.d.ts:703</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L752">asphyxia-core.d.ts:752</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,12 +321,12 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"bin"</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L704">asphyxia-core.d.ts:704</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L753">asphyxia-core.d.ts:753</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -314,12 +341,12 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ip4"</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L705">asphyxia-core.d.ts:705</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L754">asphyxia-core.d.ts:754</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -334,18 +361,24 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"bool"</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L706">asphyxia-core.d.ts:706</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L755">asphyxia-core.d.ts:755</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#knumbertype" class="tsd-signature-type">KNumberType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">number</span></h5>
@@ -354,18 +387,24 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L707">asphyxia-core.d.ts:707</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L760">asphyxia-core.d.ts:760</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#kbiginttype" class="tsd-signature-type">KBigIntType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">bigint</span></h5>
@@ -374,18 +413,24 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L708">asphyxia-core.d.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L765">asphyxia-core.d.ts:765</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#knumbergrouptype" class="tsd-signature-type">KNumberGroupType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#knumbergrouptype" class="tsd-signature-type">KNumberGroupType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -394,18 +439,24 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/db46898/asphyxia-core.d.ts#L713">asphyxia-core.d.ts:713</a></li>
+									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L770">asphyxia-core.d.ts:770</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#kbigintgrouptype" class="tsd-signature-type">KBigIntGroupType</a></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../globals.html#kbigintgrouptype" class="tsd-signature-type">KBigIntGroupType</a></h5>
+									<h5>type: <span class="tsd-signature-type">S</span></h5>
 								</li>
 								<li>
 									<h5>content: <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -414,7 +465,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attr: <a href="../globals.html#kattrmap" class="tsd-signature-type">KAttrMap</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KITEM</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -448,13 +499,13 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="k.html#array" class="tsd-kind-icon">ARRAY</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="k.html#attr" class="tsd-kind-icon">ATTR</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="k.html#item" class="tsd-kind-icon">ITEM</a>
 					</li>
 				</ul>
