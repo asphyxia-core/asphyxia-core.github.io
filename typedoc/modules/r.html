@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>R | Asphyxia CORE Plugin API</title>
-	<meta name="description" content="Documentation for Asphyxia CORE Plugin API">
+	<title>R | Asphyxia CORE Module API</title>
+	<meta name="description" content="Documentation for Asphyxia CORE Module API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Asphyxia CORE Plugin API</a>
+					<a href="../index.html" class="title">Asphyxia CORE Module API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -81,6 +81,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#config" class="tsd-kind-icon">Config</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#contributor" class="tsd-kind-icon">Contributor</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#datafile" class="tsd-kind-icon">Data<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#gamecode" class="tsd-kind-icon">Game<wbr>Code</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#route" class="tsd-kind-icon">Route</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#unhandled" class="tsd-kind-icon">Unhandled</a></li>
@@ -102,7 +103,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L296">asphyxia-core.d.ts:296</a></li>
+									<li>Defined in asphyxia-core.d.ts:293</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -140,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L286">asphyxia-core.d.ts:286</a></li>
+									<li>Defined in asphyxia-core.d.ts:283</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,6 +170,43 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="datafile" class="tsd-anchor"></a>
+					<h3>Data<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">Data<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/fileoption.html" class="tsd-signature-type">FileOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:302</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a data file upload entry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>a path (with filename) where the uploaded file will be saved to.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/fileoption.html" class="tsd-signature-type">FileOption</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>See <a href="../interfaces/fileoption.html">FileOption</a></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="gamecode" class="tsd-anchor"></a>
 					<h3>Game<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
@@ -178,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L276">asphyxia-core.d.ts:276</a></li>
+									<li>Defined in asphyxia-core.d.ts:273</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L255">asphyxia-core.d.ts:255</a></li>
+									<li>Defined in asphyxia-core.d.ts:252</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L265">asphyxia-core.d.ts:265</a></li>
+									<li>Defined in asphyxia-core.d.ts:262</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L305">asphyxia-core.d.ts:305</a></li>
+									<li>Defined in asphyxia-core.d.ts:311</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -364,6 +402,9 @@
 						<a href="r.html#contributor" class="tsd-kind-icon">Contributor</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="r.html#datafile" class="tsd-kind-icon">Data<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="r.html#gamecode" class="tsd-kind-icon">Game<wbr>Code</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
@@ -400,6 +441,5 @@
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

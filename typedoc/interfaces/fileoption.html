@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EamuseSendOption | Asphyxia CORE Module API</title>
+	<title>FileOption | Asphyxia CORE Module API</title>
 	<meta name="description" content="Documentation for Asphyxia CORE Module API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="eamusesendoption.html">EamuseSendOption</a>
+					<a href="fileoption.html">FileOption</a>
 				</li>
 			</ul>
-			<h1>Interface EamuseSendOption</h1>
+			<h1>Interface FileOption</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Response options</p>
+						<p>Details of a datafile</p>
 					</div>
 				</div>
 			</section>
@@ -75,7 +75,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">EamuseSendOption</span>
+						<span class="target">FileOption</span>
 					</li>
 				</ul>
 			</section>
@@ -86,12 +86,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#compress" class="tsd-kind-icon">compress</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#encoding" class="tsd-kind-icon">encoding</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#encrypt" class="tsd-kind-icon">encrypt</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#kencode" class="tsd-kind-icon">kencode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#rootname" class="tsd-kind-icon">root<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eamusesendoption.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fileoption.html#accept" class="tsd-kind-icon">accept</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fileoption.html#desc" class="tsd-kind-icon">desc</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fileoption.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fileoption.html#required" class="tsd-kind-icon">required</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,77 +98,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="compress" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compress</h3>
-					<div class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="accept" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accept</h3>
+					<div class="tsd-signature tsd-kind-icon">accept<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in asphyxia-core.d.ts:132</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="encoding" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encoding</h3>
-					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <a href="../globals.html#kencoding" class="tsd-signature-type">KEncoding</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in asphyxia-core.d.ts:123</li>
+							<li>Defined in asphyxia-core.d.ts:108</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Encode response with specified encoding
-							Default: &#39;SHIFT_JIS&#39;</p>
+							<p>The accept attribute of the file input element. See <a href="https://www.w3schools.com/tags/att_input_accept.asp" class="external">https://www.w3schools.com/tags/att_input_accept.asp</a></p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="encrypt" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encrypt</h3>
-					<div class="tsd-signature tsd-kind-icon">encrypt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="desc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> desc</h3>
+					<div class="tsd-signature tsd-kind-icon">desc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in asphyxia-core.d.ts:134</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="kencode" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> kencode</h3>
-					<div class="tsd-signature tsd-kind-icon">kencode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in asphyxia-core.d.ts:133</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rootname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> root<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">root<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in asphyxia-core.d.ts:130</li>
+							<li>Defined in asphyxia-core.d.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Replace response root tag name.
-								Default to child tag name of request <call> tag,
-							which is usually the case and don&#39;t need to be replaced.</p>
+							<p>Provide a description for the entry</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="status" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in asphyxia-core.d.ts:117</li>
+							<li>Defined in asphyxia-core.d.ts:104</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Provide a name to display in webui. If not provided, webui will use filename as the label.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="required" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> required</h3>
+					<div class="tsd-signature tsd-kind-icon">required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in asphyxia-core.d.ts:110</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether the file required for the plugin to work, defaults to false</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -196,36 +181,30 @@
 					<li class=" tsd-kind-interface">
 						<a href="eamusesend.html" class="tsd-kind-icon">Eamuse<wbr>Send</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="eamusesendoption.html" class="tsd-kind-icon">Eamuse<wbr>Send<wbr>Option</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="eamusesendoption.html" class="tsd-kind-icon">Eamuse<wbr>Send<wbr>Option</a>
+						<a href="fileoption.html" class="tsd-kind-icon">File<wbr>Option</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#compress" class="tsd-kind-icon">compress</a>
+								<a href="fileoption.html#accept" class="tsd-kind-icon">accept</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#encoding" class="tsd-kind-icon">encoding</a>
+								<a href="fileoption.html#desc" class="tsd-kind-icon">desc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#encrypt" class="tsd-kind-icon">encrypt</a>
+								<a href="fileoption.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#kencode" class="tsd-kind-icon">kencode</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#rootname" class="tsd-kind-icon">root<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eamusesendoption.html#status" class="tsd-kind-icon">status</a>
+								<a href="fileoption.html#required" class="tsd-kind-icon">required</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="fileoption.html" class="tsd-kind-icon">File<wbr>Option</a>
-					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#epr" class="tsd-kind-icon">EPR</a>
 					</li>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KDataReader | Asphyxia CORE Plugin API</title>
-	<meta name="description" content="Documentation for Asphyxia CORE Plugin API">
+	<title>KDataReader | Asphyxia CORE Module API</title>
+	<meta name="description" content="Documentation for Asphyxia CORE Module API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Asphyxia CORE Plugin API</a>
+					<a href="../index.html" class="title">Asphyxia CORE Module API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -126,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L318">asphyxia-core.d.ts:318</a></li>
+									<li>Defined in asphyxia-core.d.ts:321</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">obj<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L318">asphyxia-core.d.ts:318</a></li>
+							<li>Defined in asphyxia-core.d.ts:321</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L351">asphyxia-core.d.ts:351</a></li>
+									<li>Defined in asphyxia-core.d.ts:354</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,23 +179,23 @@
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">status</span>=<span class="hljs-string">"1"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">status</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">tag</span>: K.ATTR({ <span class="hljs-attr">status</span>: <span class="hljs-string">"1"</span> }, {
+  <span class="hljs-attr">tag</span>: K.ATTR({ <span class="hljs-attr">status</span>: <span class="hljs-string">&quot;1&quot;</span> }, {
     <span class="hljs-attr">inner</span>: [
-      K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>),
-      K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+      K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>),
+      K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>)
     ]
   })
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).attr(<span class="hljs-string">"tag"</span>) <span class="hljs-comment">// { status: "1" }</span>
-$(data).element(<span class="hljs-string">"tag"</span>).attr().status <span class="hljs-comment">// "1"</span>
-$(data).attr(<span class="hljs-string">"tag.inner.0"</span>).__type <span class="hljs-comment">// "s32"</span></code></pre>
+								<pre><code class="language-javascript">$(data).attr(<span class="hljs-string">&quot;tag&quot;</span>) <span class="hljs-comment">// { status: &quot;1&quot; }</span>
+$(data).element(<span class="hljs-string">&quot;tag&quot;</span>).attr().status <span class="hljs-comment">// &quot;1&quot;</span>
+$(data).attr(<span class="hljs-string">&quot;tag.inner.0&quot;</span>).__type <span class="hljs-comment">// &quot;s32&quot;</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -217,7 +217,7 @@ $(data).attr(<span class="hljs-string">"tag.inner.0"</span>).__type <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L384">asphyxia-core.d.ts:384</a></li>
+									<li>Defined in asphyxia-core.d.ts:387</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,21 +226,21 @@ $(data).attr(<span class="hljs-string">"tag.inner.0"</span>).__type <span class=
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s64&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;str&quot;</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
   <span class="hljs-attr">inner</span>: [
-    K.ITEM(<span class="hljs-string">"s64"</span>, <span class="hljs-number">1n</span>),
-    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+    K.ITEM(<span class="hljs-string">&quot;s64&quot;</span>, <span class="hljs-number">1n</span>),
+    K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>)
   ],
-  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>).bigint() <span class="hljs-comment">// 1n</span>
-$(data).bigint(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// 2n</span>
-$(data).bigint(<span class="hljs-string">"invalid"</span>, <span class="hljs-number">3n</span>) <span class="hljs-comment">// 3n</span></code></pre>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).bigint() <span class="hljs-comment">// 1n</span>
+$(data).bigint(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// 2n</span>
+$(data).bigint(<span class="hljs-string">&quot;invalid&quot;</span>, <span class="hljs-number">3n</span>) <span class="hljs-comment">// 3n</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -269,7 +269,7 @@ $(data).bigint(<span class="hljs-string">"invalid"</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L410">asphyxia-core.d.ts:410</a></li>
+									<li>Defined in asphyxia-core.d.ts:413</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,16 +279,16 @@ $(data).bigint(<span class="hljs-string">"invalid"</span>, <span class="hljs-num
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s64&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">"s64"</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
-  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"s32"</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">&quot;s64&quot;</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;s32&quot;</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [1n, 2n]</span>
-$(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [1n, 2n]</span>
+$(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -313,7 +313,7 @@ $(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-co
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L438">asphyxia-core.d.ts:438</a></li>
+									<li>Defined in asphyxia-core.d.ts:441</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,19 +322,19 @@ $(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-co
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"bool"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;bool&quot;</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
   <span class="hljs-attr">inner</span>: [
-    K.ITEM(<span class="hljs-string">"bool"</span>, <span class="hljs-literal">false</span>),
-    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+    K.ITEM(<span class="hljs-string">&quot;bool&quot;</span>, <span class="hljs-literal">false</span>),
+    K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>)
   ]
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).bool(<span class="hljs-string">"inner.0"</span>) <span class="hljs-comment">// false</span>
-$(data).bool(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// true</span>
-$(data).bool(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// false</span></code></pre>
+								<pre><code class="language-javascript">$(data).bool(<span class="hljs-string">&quot;inner.0&quot;</span>) <span class="hljs-comment">// false</span>
+$(data).bool(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// true</span>
+$(data).bool(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// false</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -356,7 +356,7 @@ $(data).bool(<span class="hljs-string">"invalid"</span>) <span class="hljs-comme
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L464">asphyxia-core.d.ts:464</a></li>
+									<li>Defined in asphyxia-core.d.ts:467</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -366,16 +366,16 @@ $(data).bool(<span class="hljs-string">"invalid"</span>) <span class="hljs-comme
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"bin"</span>&gt;</span>00ff<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"u8"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"3"</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;bin&quot;</span>&gt;</span>00ff<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;u8&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">"bin"</span>, Buffer.from([<span class="hljs-number">0x00</span>, <span class="hljs-number">0xff</span>])),
-  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"u8"</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">&quot;bin&quot;</span>, Buffer.from([<span class="hljs-number">0x00</span>, <span class="hljs-number">0xff</span>])),
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;u8&quot;</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).buffer(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// &lt;Buffer 00 ff&gt;</span>
-$(data).buffer(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+								<pre><code class="language-javascript">$(data).buffer(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &lt;Buffer 00 ff&gt;</span>
+$(data).buffer(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -400,7 +400,7 @@ $(data).buffer(<span class="hljs-string">"invalid"</span>) <span class="hljs-com
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L492">asphyxia-core.d.ts:492</a></li>
+									<li>Defined in asphyxia-core.d.ts:495</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,19 +409,19 @@ $(data).buffer(<span class="hljs-string">"invalid"</span>) <span class="hljs-com
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">number</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">array</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"u8"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"3"</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">array</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">number</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">number</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">array</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;u8&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>1 2 3<span class="hljs-tag">&lt;/<span class="hljs-name">array</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;str&quot;</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">number</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>),
-  <span class="hljs-attr">array</span>: K.ARRAY(<span class="hljs-string">"u8"</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]),
-  <span class="hljs-attr">string</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+  <span class="hljs-attr">number</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>),
+  <span class="hljs-attr">array</span>: K.ARRAY(<span class="hljs-string">&quot;u8&quot;</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]),
+  <span class="hljs-attr">string</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).content(<span class="hljs-string">"number"</span>) <span class="hljs-comment">// [1]</span>
-$(data).content(<span class="hljs-string">"array"</span>) <span class="hljs-comment">// [1, 2, 3]</span>
-$(data).content(<span class="hljs-string">"string"</span>) <span class="hljs-comment">// "abc"</span></code></pre>
+								<pre><code class="language-javascript">$(data).content(<span class="hljs-string">&quot;number&quot;</span>) <span class="hljs-comment">// [1]</span>
+$(data).content(<span class="hljs-string">&quot;array&quot;</span>) <span class="hljs-comment">// [1, 2, 3]</span>
+$(data).content(<span class="hljs-string">&quot;string&quot;</span>) <span class="hljs-comment">// &quot;abc&quot;</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -446,7 +446,7 @@ $(data).content(<span class="hljs-string">"string"</span>) <span class="hljs-com
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L524">asphyxia-core.d.ts:524</a></li>
+									<li>Defined in asphyxia-core.d.ts:527</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,22 +456,22 @@ $(data).content(<span class="hljs-string">"string"</span>) <span class="hljs-com
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
   <span class="hljs-attr">inner</span>: [
-    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>) },
-    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>) }
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>) },
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>) }
   ]
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// &lt;KDataReader&gt;</span>
-$(data).element(<span class="hljs-string">"inner"</span>).obj <span class="hljs-comment">// { id: [object] }</span>
-$(data).element(<span class="hljs-string">"inner"</span>).number(<span class="hljs-string">"id"</span>) <span class="hljs-comment">// 1</span></code></pre>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &lt;KDataReader&gt;</span>
+$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).obj <span class="hljs-comment">// { id: [object] }</span>
+$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-comment">// 1</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -493,7 +493,7 @@ $(data).element(<span class="hljs-string">"inner"</span>).number(<span class="hl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L555">asphyxia-core.d.ts:555</a></li>
+									<li>Defined in asphyxia-core.d.ts:558</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -503,21 +503,21 @@ $(data).element(<span class="hljs-string">"inner"</span>).number(<span class="hl
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
   <span class="hljs-attr">inner</span>: [
-    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>) },
-    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>) }
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>) },
+    { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>) }
   ]
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).elements(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [&lt;KDataReader&gt;, &lt;KDataReader&gt;]</span>
-$(data).elements(<span class="hljs-string">"inner"</span>)[<span class="hljs-number">1</span>].number(<span class="hljs-string">"id"</span>) <span class="hljs-comment">// 2</span></code></pre>
+								<pre><code class="language-javascript">$(data).elements(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [&lt;KDataReader&gt;, &lt;KDataReader&gt;]</span>
+$(data).elements(<span class="hljs-string">&quot;inner&quot;</span>)[<span class="hljs-number">1</span>].number(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-comment">// 2</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -539,7 +539,7 @@ $(data).elements(<span class="hljs-string">"inner"</span>)[<span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L588">asphyxia-core.d.ts:588</a></li>
+									<li>Defined in asphyxia-core.d.ts:591</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,21 +548,21 @@ $(data).elements(<span class="hljs-string">"inner"</span>)[<span class="hljs-num
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s64&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;str&quot;</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
   <span class="hljs-attr">inner</span>: [
-    K.ITEM(<span class="hljs-string">"s64"</span>, <span class="hljs-number">1n</span>),
-    K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">2</span>)
+    K.ITEM(<span class="hljs-string">&quot;s64&quot;</span>, <span class="hljs-number">1n</span>),
+    K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>)
   ],
-  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>)
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">"inner"</span>).number() <span class="hljs-comment">// 1</span>
-$(data).number(<span class="hljs-string">"inner.1"</span>) <span class="hljs-comment">// 2</span>
-$(data).number(<span class="hljs-string">"invalid"</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// 3</span></code></pre>
+								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number() <span class="hljs-comment">// 1</span>
+$(data).number(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// 2</span>
+$(data).number(<span class="hljs-string">&quot;invalid&quot;</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// 3</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -591,7 +591,7 @@ $(data).number(<span class="hljs-string">"invalid"</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L614">asphyxia-core.d.ts:614</a></li>
+									<li>Defined in asphyxia-core.d.ts:617</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,16 +601,16 @@ $(data).number(<span class="hljs-string">"invalid"</span>, <span class="hljs-num
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s64"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">"2"</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s64&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>1 2<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span> <span class="hljs-attr">__count</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>3 4<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">"s64"</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
-  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">"s32"</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+  <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;s64&quot;</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
+  <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">&quot;s32&quot;</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span>
-$(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// [3, 4]</span></code></pre>
+								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span>
+$(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [3, 4]</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -635,7 +635,7 @@ $(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comm
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/asphyxia-core/plugins/blob/510453c/asphyxia-core.d.ts#L640">asphyxia-core.d.ts:640</a></li>
+									<li>Defined in asphyxia-core.d.ts:643</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -645,16 +645,16 @@ $(data).bigints(<span class="hljs-string">"inner"</span>) <span class="hljs-comm
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"str"</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">"s32"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">inner</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;str&quot;</span>&gt;</span>abc<span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">invalid</span> <span class="hljs-attr">__type</span>=<span class="hljs-string">&quot;s32&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">invalid</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span></code></pre>
 								<pre><code class="language-javascript"><span class="hljs-keyword">const</span> data = {
-  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">"str"</span>, <span class="hljs-string">"abc"</span>),
-  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">"s32"</span>, <span class="hljs-number">1</span>)
+  <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>),
+  <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>)
 }</code></pre>
 								<p>Evals:</p>
-								<pre><code class="language-javascript">$(data).str(<span class="hljs-string">"inner"</span>) <span class="hljs-comment">// "abc"</span>
-$(data).str(<span class="hljs-string">"invalid"</span>) <span class="hljs-comment">// undefined</span></code></pre>
+								<pre><code class="language-javascript">$(data).str(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &quot;abc&quot;</span>
+$(data).str(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -741,6 +741,9 @@ $(data).str(<span class="hljs-string">"invalid"</span>) <span class="hljs-commen
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/eamusesendoption.html" class="tsd-kind-icon">Eamuse<wbr>Send<wbr>Option</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/fileoption.html" class="tsd-kind-icon">File<wbr>Option</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#epr" class="tsd-kind-icon">EPR</a>
 					</li>
@@ -790,6 +793,5 @@ $(data).str(<span class="hljs-string">"invalid"</span>) <span class="hljs-commen
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
