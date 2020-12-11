@@ -14,14 +14,14 @@ This is a "e-amuse emulator".
 4. Profit
 
 ## FAQ
-- Does it supports the X game.
+- Does it supports the X game?
   - Asphyxia CORE have no game support out of the box.
   - Please checkout the [community plugins](https://github.com/asphyxia-core/plugins) for game support or find some other plugins
-- Can I run Asphyxia on cabinet
+- Can I run Asphyxia on cabinets?
   - Asphyxia CORE can only ran on Windows 7 or newer, and we do not have any plans for Windows XP support.
   - Also, Asphyxia CORE is ram heavy. Depends on the plugins, it may takes up 60MB ~ 400MB of memory.
   - It is recommended to setup a dedicated small server box.
-- Can I have more than 16 profiles
+- Can I have more than 16 profiles?
   - Well, that means you have more than 15 friends irl who have similar interests. Congratulations.
   - But unfortunately the profile limit is in place to prevent commercial or malicious usage. You can, for some additional effort, swap in and out your save files or use multiple instances of CORE.
 - Open-source?
