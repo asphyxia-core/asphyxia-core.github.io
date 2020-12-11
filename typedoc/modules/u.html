@@ -79,7 +79,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="u.html#card2nfc" class="tsd-kind-icon">Card2NFC</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="u.html#getconfig" class="tsd-kind-icon">Get<wbr>Config</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="u.html#nfc2card" class="tsd-kind-icon">NFC2<wbr>Card</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="u.html#parsexml" class="tsd-kind-icon">parseXML</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="u.html#toxml" class="tsd-kind-icon">toXML</a></li>
 							</ul>
@@ -90,6 +92,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="card2nfc" class="tsd-anchor"></a>
+					<h3>Card2NFC</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">Card2NFC<span class="tsd-signature-symbol">(</span>card<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:938</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Card Number / Data Transfer Number to NFC serial</p>
+								</div>
+								<p>returns null if the card number is invalid</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>card: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Card Number / Data Transfer Number</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="getconfig" class="tsd-anchor"></a>
 					<h3>Get<wbr>Config</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
@@ -99,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:910</li>
+									<li>Defined in asphyxia-core.d.ts:930</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -120,6 +154,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="nfc2card" class="tsd-anchor"></a>
+					<h3>NFC2<wbr>Card</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">NFC2<wbr>Card<span class="tsd-signature-symbol">(</span>nfc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:946</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert NFC serial to Card Number or Data Transfer Number</p>
+								</div>
+								<p>returns null if the nfc serial is invalid</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nfc: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="parsexml" class="tsd-anchor"></a>
 					<h3>parseXML</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
@@ -129,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:904</li>
+									<li>Defined in asphyxia-core.d.ts:924</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:896</li>
+									<li>Defined in asphyxia-core.d.ts:916</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +281,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="u.html#card2nfc" class="tsd-kind-icon">Card2NFC</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="u.html#getconfig" class="tsd-kind-icon">Get<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="u.html#nfc2card" class="tsd-kind-icon">NFC2<wbr>Card</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="u.html#parsexml" class="tsd-kind-icon">parseXML</a>

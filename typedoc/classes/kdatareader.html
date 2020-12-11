@@ -67,7 +67,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A warpper of javascript object for reading xml-like formatted data.</p>
+						<p>A wrapper of javascript object for reading xml-like formatted data.</p>
 					</div>
 				</div>
 			</section>
@@ -126,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:336</li>
+									<li>Defined in asphyxia-core.d.ts:340</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">obj<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in asphyxia-core.d.ts:336</li>
+							<li>Defined in asphyxia-core.d.ts:340</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,12 +170,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:369</li>
+									<li>Defined in asphyxia-core.d.ts:373</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get attrubutes for a tag</p>
+									<p>Get attributes for a tag</p>
 								</div>
 								<p>Example:</p>
 								<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
@@ -192,7 +192,7 @@
     ]
   })
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).attr(<span class="hljs-string">&quot;tag&quot;</span>) <span class="hljs-comment">// { status: &quot;1&quot; }</span>
 $(data).element(<span class="hljs-string">&quot;tag&quot;</span>).attr().status <span class="hljs-comment">// &quot;1&quot;</span>
 $(data).attr(<span class="hljs-string">&quot;tag.inner.0&quot;</span>).__type <span class="hljs-comment">// &quot;s32&quot;</span></code></pre>
@@ -217,7 +217,7 @@ $(data).attr(<span class="hljs-string">&quot;tag.inner.0&quot;</span>).__type <s
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:402</li>
+									<li>Defined in asphyxia-core.d.ts:406</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -237,7 +237,7 @@ $(data).attr(<span class="hljs-string">&quot;tag.inner.0&quot;</span>).__type <s
   ],
   <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).bigint() <span class="hljs-comment">// 1n</span>
 $(data).bigint(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// 2n</span>
 $(data).bigint(<span class="hljs-string">&quot;invalid&quot;</span>, <span class="hljs-number">3n</span>) <span class="hljs-comment">// 3n</span></code></pre>
@@ -269,7 +269,7 @@ $(data).bigint(<span class="hljs-string">&quot;invalid&quot;</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:428</li>
+									<li>Defined in asphyxia-core.d.ts:432</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +286,7 @@ $(data).bigint(<span class="hljs-string">&quot;invalid&quot;</span>, <span class
   <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">&quot;s64&quot;</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
   <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;s32&quot;</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [1n, 2n]</span>
 $(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
@@ -313,7 +313,7 @@ $(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span clas
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:456</li>
+									<li>Defined in asphyxia-core.d.ts:460</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,7 +331,7 @@ $(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span clas
     K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>)
   ]
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).bool(<span class="hljs-string">&quot;inner.0&quot;</span>) <span class="hljs-comment">// false</span>
 $(data).bool(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// true</span>
 $(data).bool(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// false</span></code></pre>
@@ -356,7 +356,7 @@ $(data).bool(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:482</li>
+									<li>Defined in asphyxia-core.d.ts:486</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +373,7 @@ $(data).bool(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="
   <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">&quot;bin&quot;</span>, Buffer.from([<span class="hljs-number">0x00</span>, <span class="hljs-number">0xff</span>])),
   <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;u8&quot;</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).buffer(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &lt;Buffer 00 ff&gt;</span>
 $(data).buffer(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
@@ -400,7 +400,7 @@ $(data).buffer(<span class="hljs-string">&quot;invalid&quot;</span>) <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:510</li>
+									<li>Defined in asphyxia-core.d.ts:514</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +418,7 @@ $(data).buffer(<span class="hljs-string">&quot;invalid&quot;</span>) <span class
   <span class="hljs-attr">array</span>: K.ARRAY(<span class="hljs-string">&quot;u8&quot;</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]),
   <span class="hljs-attr">string</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).content(<span class="hljs-string">&quot;number&quot;</span>) <span class="hljs-comment">// [1]</span>
 $(data).content(<span class="hljs-string">&quot;array&quot;</span>) <span class="hljs-comment">// [1, 2, 3]</span>
 $(data).content(<span class="hljs-string">&quot;string&quot;</span>) <span class="hljs-comment">// &quot;abc&quot;</span></code></pre>
@@ -446,7 +446,7 @@ $(data).content(<span class="hljs-string">&quot;string&quot;</span>) <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:542</li>
+									<li>Defined in asphyxia-core.d.ts:546</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +468,7 @@ $(data).content(<span class="hljs-string">&quot;string&quot;</span>) <span class
     { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>) }
   ]
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &lt;KDataReader&gt;</span>
 $(data).element(<span class="hljs-string">&quot;inner&quot;</span>).obj <span class="hljs-comment">// { id: [object] }</span>
 $(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-comment">// 1</span></code></pre>
@@ -493,7 +493,7 @@ $(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number(<span
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:573</li>
+									<li>Defined in asphyxia-core.d.ts:577</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +515,7 @@ $(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number(<span
     { <span class="hljs-attr">id</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">2</span>) }
   ]
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).elements(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [&lt;KDataReader&gt;, &lt;KDataReader&gt;]</span>
 $(data).elements(<span class="hljs-string">&quot;inner&quot;</span>)[<span class="hljs-number">1</span>].number(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-comment">// 2</span></code></pre>
 							</div>
@@ -539,7 +539,7 @@ $(data).elements(<span class="hljs-string">&quot;inner&quot;</span>)[<span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:606</li>
+									<li>Defined in asphyxia-core.d.ts:610</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -559,7 +559,7 @@ $(data).elements(<span class="hljs-string">&quot;inner&quot;</span>)[<span class
   ],
   <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>)
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).element(<span class="hljs-string">&quot;inner&quot;</span>).number() <span class="hljs-comment">// 1</span>
 $(data).number(<span class="hljs-string">&quot;inner.1&quot;</span>) <span class="hljs-comment">// 2</span>
 $(data).number(<span class="hljs-string">&quot;invalid&quot;</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// 3</span></code></pre>
@@ -591,7 +591,7 @@ $(data).number(<span class="hljs-string">&quot;invalid&quot;</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:632</li>
+									<li>Defined in asphyxia-core.d.ts:636</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,7 +608,7 @@ $(data).number(<span class="hljs-string">&quot;invalid&quot;</span>, <span class
   <span class="hljs-attr">invalid</span>: K.ARRAY(<span class="hljs-string">&quot;s64&quot;</span>, [<span class="hljs-number">1n</span>, <span class="hljs-number">2n</span>]),
   <span class="hljs-attr">inner</span>: K.ARRAY(<span class="hljs-string">&quot;s32&quot;</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).bigints(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span>
 $(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// [3, 4]</span></code></pre>
 							</div>
@@ -635,7 +635,7 @@ $(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in asphyxia-core.d.ts:658</li>
+									<li>Defined in asphyxia-core.d.ts:662</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -652,7 +652,7 @@ $(data).bigints(<span class="hljs-string">&quot;inner&quot;</span>) <span class=
   <span class="hljs-attr">inner</span>: K.ITEM(<span class="hljs-string">&quot;str&quot;</span>, <span class="hljs-string">&quot;abc&quot;</span>),
   <span class="hljs-attr">invalid</span>: K.ITEM(<span class="hljs-string">&quot;s32&quot;</span>, <span class="hljs-number">1</span>)
 }</code></pre>
-								<p>Evals:</p>
+								<p>Eval:</p>
 								<pre><code class="language-javascript">$(data).str(<span class="hljs-string">&quot;inner&quot;</span>) <span class="hljs-comment">// &quot;abc&quot;</span>
 $(data).str(<span class="hljs-string">&quot;invalid&quot;</span>) <span class="hljs-comment">// undefined</span></code></pre>
 							</div>
