@@ -82,6 +82,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#config" class="tsd-kind-icon">Config</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#contributor" class="tsd-kind-icon">Contributor</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#datafile" class="tsd-kind-icon">Data<wbr>File</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#extramodulehandler" class="tsd-kind-icon">Extra<wbr>Module<wbr>Handler</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#gamecode" class="tsd-kind-icon">Game<wbr>Code</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#route" class="tsd-kind-icon">Route</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="r.html#unhandled" class="tsd-kind-icon">Unhandled</a></li>
@@ -200,6 +201,76 @@
 									<div class="tsd-comment tsd-typography">
 										<p>See <a href="../interfaces/fileoption.html">FileOption</a></p>
 									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="extramodulehandler" class="tsd-anchor"></a>
+					<h3>Extra<wbr>Module<wbr>Handler</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">Extra<wbr>Module<wbr>Handler<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in asphyxia-core.d.ts:360</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a handler for adding extra modules</p>
+								</div>
+								<p>Core has the following modules built-in:</p>
+								<ul>
+									<li><code>cardmng</code></li>
+									<li><code>facility</code></li>
+									<li><code>message</code></li>
+									<li><code>numbering</code></li>
+									<li><code>package</code></li>
+									<li><code>pcbevent</code></li>
+									<li><code>pcbtracker</code></li>
+									<li><code>pkglist</code></li>
+									<li><code>posevent</code></li>
+									<li><code>userdata</code></li>
+									<li><code>userid</code></li>
+									<li><code>eacoin</code></li>
+									<li><code>local</code></li>
+									<li><code>local2</code></li>
+									<li><code>lobby</code></li>
+									<li><code>lobby2</code></li>
+									<li><code>dlstatus</code></li>
+									<li><code>netlog</code></li>
+									<li><code>sidmgr</code></li>
+									<li><code>globby</code></li>
+								</ul>
+								<p>Callback can be async function if you want to use await for your DB operations.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>handler: <span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>model: <span class="tsd-signature-type">string</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -403,6 +474,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="r.html#datafile" class="tsd-kind-icon">Data<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="r.html#extramodulehandler" class="tsd-kind-icon">Extra<wbr>Module<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="r.html#gamecode" class="tsd-kind-icon">Game<wbr>Code</a>
